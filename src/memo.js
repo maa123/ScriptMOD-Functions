@@ -9,4 +9,4 @@ var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
 
 
 */
-//これはメモです(ライセンス適用しないであげてー)
+//これはメモです(ライセンス適用しないであげてー(どうすれば良いのかわからない))
