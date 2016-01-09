@@ -1,7 +1,7 @@
 /*setTimeout()を追加します
 maa123
 */
-/ * 使い方*/
+/* 使い方*/
 var mst_obj=[];
 var mst_toggle=false;
 /* ↑これをできるだけ上の方へ貼り付けてください*/
