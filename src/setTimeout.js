@@ -11,7 +11,14 @@ function setTimeout(callback,time){
 mst_toggle=true;
 var time=(time/50);
 var nda={time:time,cb:callback};
-mst_obj.push(nda);
+var res=mst_obj.push(nda);
+return res;
+}
+function clearTimeout(num){
+if(typeof num=="number"){
+var i=num-1;
+mst_obj.splice(i,1)
+}
 }
 function mst_roop(){
 if(mst_toggle){
