@@ -29,7 +29,11 @@ var cb=mst_objo["cb"];
 tm--;
 
 if(tm<=0){
+if(typeof mst_objo["cb"] =="function"){
+  mst_objo["cb"]();
+}else{
 eval(mst_objo["cb"]);
+}
 mst_obj.splice(i,1);
 }else{
 mst_obj[i]["time"]=tm;
