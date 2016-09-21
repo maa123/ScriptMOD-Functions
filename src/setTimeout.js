@@ -7,6 +7,7 @@ var mst_to=[];
 /* 次に*/
 
 function setTimeout(callback,time){
+var argus=Array.prototype.slice.call(arguments,0);
 var th=new java.lang.Thread(new java.lang.Runnable({run:function(){
     try{
         java.lang.Thread.sleep(time);
@@ -15,7 +16,12 @@ var th=new java.lang.Thread(new java.lang.Runnable({run:function(){
     }
 if(mst_to[th]){
 if(typeof callback=="function"){
-  callback();
+  if(argus.length>=3){
+    argus.splice(0,2);
+    callback.apply(null,argus);
+  }else{
+    callback();
+  }
 }else{
 eval(callback);
 }
