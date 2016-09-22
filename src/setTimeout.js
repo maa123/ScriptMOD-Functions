@@ -12,7 +12,7 @@ var th=new java.lang.Thread(new java.lang.Runnable({run:function(){
     try{
         java.lang.Thread.sleep(time);
     }catch(error){
-        print("エラーが発生しました:setTimeout");
+        print("Error Occurred:setTimeout\n"+error);
     }
 if(mst_to[th]){
 if(typeof callback=="function"){
